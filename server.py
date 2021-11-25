@@ -19,7 +19,7 @@ def pokemons_handler():
     resp, code = fns[request.method](request)
     return jsonify(resp), code
 
-@server.route('/api/pokemon/<int:pokemon_id>', methods=['GET', 'PATCH', 'PUT', 'DELETE'])
+@server.route('/pokemon/<int:pokemon_id>', methods=['GET', 'PATCH', 'PUT', 'DELETE'])
 def pokemon_handler(pokemon_id):
     fns = {
         'GET': pokemon.show,
