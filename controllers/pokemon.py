@@ -15,7 +15,7 @@ def show(req, uid):
 
 def create(req):
     new_pokemon = req.get_json()
-    new_pokemon['id'] = sorted([p['id'] for p in pokemon])[-1] + 1
+    new_pokemon['id'] = sorted([p['id'] for p in pokemons])[-1] + 1
     pokemons.append(new_pokemon)
     return new_pokemon, 201
 
