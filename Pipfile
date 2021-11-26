@@ -7,6 +7,11 @@ name = "pypi"
 flask = "*"
 gunicorn = "*"
 flask-cors = "*"
+flask-wtf = "*"
+werkzeug = "*"
+pip = "*"
+install = "*"
+flask-bootstrap4 = "*"
 
 [dev-packages]
 pytest = "*"
